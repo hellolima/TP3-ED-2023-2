@@ -13,7 +13,7 @@ void Matriz::multiplicar(const Matriz& a, const Matriz& b) {
             resultado[i][j] = 0;
             for (int k = 0; k < 2; ++k) {
                 resultado[i][j] += (a.conteudo[i][k] * b.conteudo[k][j]) % 100000000;
-                resultado[i][j] %= 100000000;
+                resultado[i][j] %= MODULO;
             }
         }
     }

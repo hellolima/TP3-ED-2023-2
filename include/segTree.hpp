@@ -18,7 +18,7 @@ private:
     void construir(NoArvore* no, int esquerda, int direita);
     void atualizar(NoArvore* no, int esquerda, int direita, int idx, const Matriz& valor);
     Matriz consultar(NoArvore* no, int esquerda, int direita, int consultarEsquerda, int consultarDireita);
-
+    void liberarMemoria(NoArvore* no);
 public:
     SegTree(int size);
     ~SegTree();
